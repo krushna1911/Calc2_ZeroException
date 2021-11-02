@@ -1,5 +1,5 @@
 # Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/krushna1911/calc2.svg?branch=main)](https://app.travis-ci.com/krushna1911/calc2)
+[![Build Status](https://app.travis-ci.com/krushna1911/Calc2_ZeroException.svg?branch=main)](https://app.travis-ci.com/krushna1911/Calc2_ZeroException)
 
 Run Pip Install
 pip install -r requirements.txt
