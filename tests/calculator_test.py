@@ -13,7 +13,7 @@ def clear_history():
 def test_calculator_add(clear_history):
     """Testing the Add function of the calculator"""
     # pylint: disable=unused-argument,redefined-outer-name
-    assert Calculator.add_number(1,2) == 3
+    assert Calculator.add_number(1, 2) == 3
     assert Calculator.add_number(2, 2) == 4
     assert Calculator.add_number(3, 2) == 5
     assert Calculator.add_number(4, 2) == 6
