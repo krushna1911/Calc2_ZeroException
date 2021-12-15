@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Index</h1>
+    <p class="important">
+        Welcome to my Webcalc. here you will get to beautiful table once perform operation. Kindly check <a href="/basicform">Basic Form</a> tab on navbar to perform operations such as add, subtract, multiply and divide.
+        <img src="{{ url_for('static', filename='images/img_2.png') }}">
+
+    </p>
+
+<a href="/good/1.0/2.0">One Plus Two Good</a><br><a href="/bad/1/2">One Plus Two Bad</a>
+{% endblock %}

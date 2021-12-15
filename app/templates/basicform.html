@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important {
+            color: #336699;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+
+    <h1>Calculator</h1>
+    <form action="/basicform" style="border:3px solid #FFFFFF"  method="POST" >
+        <div class="form-group">
+            <label for="formGroupExampleInput">Value1</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="value1" id="value1" name="value1" style="color: #336699">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Value2</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="value2" id="value2" name="value2">
+        </div>
+        <fieldset>
+            <legend>Operation</legend>
+            <div>
+                <input type="radio" name="operation" id="addition" value="addition" checked>
+                <label for="addition">Addition</label>
+            </div>
+            <div>
+                <input type="radio" name="operation" id="subtraction" value="subtraction">
+                <label for="subtraction">Subtraction</label>
+            </div>
+            <div>
+                <input type="radio" name="operation" id="multiplication" value="multiplication">
+                <label for="multiplication">Multiplication</label>
+            </div>
+            <div>
+                <input type="radio" name="operation" id="division" value="division">
+                <label for="division">Division</label>
+            </div>
+        </fieldset>
+        <input class="btn btn-primary" type="submit" value="Submit">
+
+
+    </form>
+
+
+{% endblock %}
